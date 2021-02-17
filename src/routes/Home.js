@@ -1,21 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { dbService } from "fbase";
 
-const Home = () => {
-  const [interest, setPost] = useState("");
+const Home = ({ userObj }) => {
+  const [interest, setInterest] = useState("");
+  const [interests, setInterests] = useState([]);
+
+  useEffect(() => {
+    dbService.collection("interest").onSnapshot((snapshot) => {
+      const interestArray = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+      setInterests(interestArray);
+    });
+  }, []);
+
   const onSubmit = async (event) => {
     event.preventDefault();
     await dbService.collection("interest").add({
-      interest,
+      text: interest,
       createdAt: Date.now(),
+      createrId: userObj.uid,
+      createrName: userObj.displayName,
     });
-    setPost("");
+    setInterest("");
   };
   const onChange = (event) => {
     const {
       target: { value },
     } = event;
-    setPost(value);
+    setInterest(value);
   };
   return (
     <div>
@@ -29,6 +43,13 @@ const Home = () => {
         />
         <input type="submit" value="Post" />
       </form>
+      <div>
+        {interests.map((interest) => (
+          <div key={interest.id}>
+            <h4>{interest.text}</h4>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
