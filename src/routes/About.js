@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div>
       <img
-        src="sung.jpg"
+        src="images/sung.jpg"
         alt="face"
         style={{
           width: 200,
