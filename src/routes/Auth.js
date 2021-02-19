@@ -31,7 +31,7 @@ const Auth = () => {
     <div className="authContainer">
       <img
         className="logo"
-        src="images/logo.png"
+        src="/public/images/logo.png"
         alt="logo"
         style={{
           width: 425,
