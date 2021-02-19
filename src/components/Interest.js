@@ -1,5 +1,7 @@
 import { dbService, storageService } from "fbase";
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash, faPencilAlt } from "@fortawesome/free-solid-svg-icons";
 
 const Interest = ({ interestObj, isOwner }) => {
   const [editing, setEditing] = useState(false);
@@ -27,42 +29,54 @@ const Interest = ({ interestObj, isOwner }) => {
     setNewInterest(value);
   };
   return (
-    <div>
+    <div className="nweet">
       {editing ? (
         <>
           {isOwner && (
             <>
-              <form onSubmit={onSubmit}>
+              <form onSubmit={onSubmit} className="container nweetEdit">
                 <input
                   type="text"
                   placeholder="Edit your post"
                   value={newInterest}
                   required
+                  autoFocus
                   onChange={onChange}
+                  className="formInput"
                 />
-                <input type="submit" value="Update Post" />
+                <input type="submit" value="Update Post" className="formBtn" />
               </form>
-              <button onClick={toggleEditing}>Cancel</button>
+              <span onClick={toggleEditing} className="formBtn cancelBtn">
+                Cancel
+              </span>
             </>
           )}
         </>
       ) : (
         <>
-          {interestObj.creatorName && <h4>{interestObj.creatorName}</h4>}
-          <h4>{interestObj.text}</h4>
+          {interestObj.creatorName && (
+            <h4 style={{ fontWeight: "bold" }}>{interestObj.creatorName}</h4>
+          )}
+
+          <h4
+            style={{
+              paddingTop: 20,
+            }}
+          >
+            {interestObj.text}
+          </h4>
           {interestObj.attachmentUrl && (
-            <img
-              src={interestObj.attachmentUrl}
-              width="50px"
-              height="50px"
-              alt="newPost"
-            />
+            <img src={interestObj.attachmentUrl} alt="newPost" />
           )}
           {isOwner && (
-            <>
-              <button onClick={onDeleteClick}>Delete</button>
-              <button onClick={toggleEditing}>Edit</button>
-            </>
+            <div class="nweet__actions">
+              <span onClick={onDeleteClick}>
+                <FontAwesomeIcon icon={faTrash} />
+              </span>
+              <span onClick={toggleEditing}>
+                <FontAwesomeIcon icon={faPencilAlt} />
+              </span>
+            </div>
           )}
         </>
       )}
