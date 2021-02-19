@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Langterest-CodingMattersHackathon/static/css/main.79308690.chunk.css",
+    "main.css": "/Langterest-CodingMattersHackathon/static/css/main.90d2653f.chunk.css",
     "main.js": "/Langterest-CodingMattersHackathon/static/js/main.4ef71189.chunk.js",
     "main.js.map": "/Langterest-CodingMattersHackathon/static/js/main.4ef71189.chunk.js.map",
     "runtime-main.js": "/Langterest-CodingMattersHackathon/static/js/runtime-main.6815697d.js",
@@ -8,14 +8,14 @@
     "static/js/2.fa4f2d7a.chunk.js": "/Langterest-CodingMattersHackathon/static/js/2.fa4f2d7a.chunk.js",
     "static/js/2.fa4f2d7a.chunk.js.map": "/Langterest-CodingMattersHackathon/static/js/2.fa4f2d7a.chunk.js.map",
     "index.html": "/Langterest-CodingMattersHackathon/index.html",
-    "static/css/main.79308690.chunk.css.map": "/Langterest-CodingMattersHackathon/static/css/main.79308690.chunk.css.map",
+    "static/css/main.90d2653f.chunk.css.map": "/Langterest-CodingMattersHackathon/static/css/main.90d2653f.chunk.css.map",
     "static/js/2.fa4f2d7a.chunk.js.LICENSE.txt": "/Langterest-CodingMattersHackathon/static/js/2.fa4f2d7a.chunk.js.LICENSE.txt",
     "static/media/sung.316d86cb.jpg": "/Langterest-CodingMattersHackathon/static/media/sung.316d86cb.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6815697d.js",
     "static/js/2.fa4f2d7a.chunk.js",
-    "static/css/main.79308690.chunk.css",
+    "static/css/main.90d2653f.chunk.css",
     "static/js/main.4ef71189.chunk.js"
   ]
 }
