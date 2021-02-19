@@ -1,13 +1,12 @@
 @import "https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css";
 
-* {
-  box-sizing: border-box;
-}
-
 input {
   all: unset;
-  box-sizing: border-box;
   appearance: none;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -52,6 +51,7 @@ form {
   text-align: center;
   background-color: #feffff;
   color: black;
+  box-sizing: border-box !important;
 }
 
 .formBtn {
@@ -63,6 +63,7 @@ form {
   border-radius: 20px;
   background-color: #97bc62ff;
   cursor: pointer;
+  box-sizing: border-box !important;
 }
 
 .cancelBtn {

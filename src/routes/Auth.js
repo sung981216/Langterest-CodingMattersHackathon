@@ -8,6 +8,7 @@ import {
   faGithub,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
+import logo from "../logo.png";
 
 const Auth = () => {
   const onSocialClick = async (event) => {
@@ -31,11 +32,14 @@ const Auth = () => {
     <div className="authContainer">
       <img
         className="logo"
-        src="/public/images/logo.png"
+        src={logo}
         alt="logo"
         style={{
-          width: 425,
+          width: 450,
           paddingBottom: 70,
+          display: "block",
+          marginLeft: "auto",
+          marginRight: "auto",
         }}
       />
       <AuthForm />

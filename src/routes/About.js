@@ -1,10 +1,12 @@
 import React from "react";
 
+import sung from "../sung.jpg";
+
 const About = () => {
   return (
     <div>
       <img
-        src="/public/images/sung.jpg"
+        src={sung}
         alt="face"
         style={{
           width: 200,
@@ -45,7 +47,7 @@ const About = () => {
           front-end developer after graduating from the program.
         </h5>
 
-        <h5 style={{ paddingTop: 40 }}>
+        <h5 style={{ paddingTop: 40, paddingBottom: 60 }}>
           Thank you for checking out my CodingMatters Hackathon Project!
         </h5>
       </div>
