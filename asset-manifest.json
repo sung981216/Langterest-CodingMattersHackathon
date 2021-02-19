@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Langterest-CodingMattersHackathon/static/css/main.bcf3533e.chunk.css",
-    "main.js": "/Langterest-CodingMattersHackathon/static/js/main.4ef71189.chunk.js",
-    "main.js.map": "/Langterest-CodingMattersHackathon/static/js/main.4ef71189.chunk.js.map",
+    "main.js": "/Langterest-CodingMattersHackathon/static/js/main.ac2e84d0.chunk.js",
+    "main.js.map": "/Langterest-CodingMattersHackathon/static/js/main.ac2e84d0.chunk.js.map",
     "runtime-main.js": "/Langterest-CodingMattersHackathon/static/js/runtime-main.6815697d.js",
     "runtime-main.js.map": "/Langterest-CodingMattersHackathon/static/js/runtime-main.6815697d.js.map",
     "static/js/2.fa4f2d7a.chunk.js": "/Langterest-CodingMattersHackathon/static/js/2.fa4f2d7a.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.6815697d.js",
     "static/js/2.fa4f2d7a.chunk.js",
     "static/css/main.bcf3533e.chunk.css",
-    "static/js/main.4ef71189.chunk.js"
+    "static/js/main.ac2e84d0.chunk.js"
   ]
 }
